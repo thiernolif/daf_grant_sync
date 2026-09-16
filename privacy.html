@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — DAF Grant Sync</title>
+<style>
+  :root {
+    --ink: #16191d; --muted: #5d6874; --rule: #dfe3e8;
+    --ground: #ffffff; --accent: #0f6257;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e8ecef; --muted: #98a3ae; --rule: #2c343c;
+            --ground: #14181c; --accent: #4cb5a6; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding-inline: 20px; padding-block: 56px 72px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .meta { color: var(--muted); margin: 0 0 36px; font-size: 15px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: 14px; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">DAF Grant Sync · Livelihood Impact Fund · Effective 16 September 2026</p>
+
+  <p>DAF Grant Sync is an internal accounting integration operated by Livelihood Impact
+     Fund ("the Fund"). It records the Fund's own charitable grants into the Fund's own
+     QuickBooks Online company. It has no users outside the Fund and collects no
+     information from the general public.</p>
+
+  <h2>Information the integration accesses</h2>
+  <p>When connected to QuickBooks Online, the integration accesses only what it needs to
+     record grant transactions:</p>
+  <table>
+    <tr><th>Data</th><th>Why</th><th>Read or write</th></tr>
+    <tr><td>Chart of accounts</td><td>To identify which accounts grants are recorded against</td><td>Read</td></tr>
+    <tr><td>Expense transactions and their reference numbers</td><td>To check whether a grant has already been recorded</td><td>Read</td></tr>
+    <tr><td>Expense transactions</td><td>To record a grant</td><td>Write</td></tr>
+  </table>
+  <p>It does not access customer records, employee or payroll data, bank credentials,
+     payment card data, or any other part of the accounting file.</p>
+
+  <p>Separately, the integration reads grant records from the donor-advised fund platforms
+     the Fund grants through. These contain the date, amount, recipient charity name, and
+     a reference number for each grant. Recipient charities are organizations, not
+     individuals.</p>
+
+  <h2>Information the integration stores</h2>
+  <ul>
+    <li><strong>Authorization tokens</strong> issued by Intuit, stored in a
+        permission-restricted file on a Fund-controlled computer. These are the only
+        Intuit-derived data retained at rest.</li>
+    <li><strong>Grant records</strong> retrieved from donor-advised fund platforms,
+        retained as part of the Fund's accounting records.</li>
+  </ul>
+  <p>Accounting data read from QuickBooks is used during a run and not written to disk.</p>
+
+  <h2>How information is used</h2>
+  <p>Solely to record the Fund's grants in the Fund's own accounting system. The
+     integration does not move money, initiate payments, or alter any record other than
+     the expense transactions it creates.</p>
+
+  <h2>Sharing</h2>
+  <p>None. Data is not sold, rented, shared, or disclosed to any third party. There are no
+     subprocessors, no analytics services, no advertising, and no data transfers outside
+     systems the Fund controls, except the direct connection to Intuit's API.</p>
+
+  <h2>Security</h2>
+  <ul>
+    <li>All communication with Intuit uses HTTPS (TLS 1.2 or higher).</li>
+    <li>Authorization tokens are stored with owner-only file permissions on
+        full-disk-encrypted, access-controlled machines.</li>
+    <li>Access is limited to the small number of Fund staff who operate the integration.</li>
+    <li>Credentials are never committed to source control.</li>
+  </ul>
+
+  <h2>Retention and deletion</h2>
+  <p>Authorization tokens are retained until access is revoked, then deleted. Grant records
+     are retained for the period required for the Fund's financial records. Accounting data
+     read from QuickBooks is discarded at the end of each run.</p>
+
+  <h2>Revoking access</h2>
+  <p>A QuickBooks administrator can revoke access at any time in QuickBooks Online under
+     <strong>Settings → Apps → DAF Grant Sync → Disconnect</strong>. Access ends
+     immediately and the Fund deletes the stored tokens.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the revised version will be posted at this address with an
+     updated effective date.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:thierno@lifund.org">tech@lifund.org</a></p>
+
+  <footer>
+    <p><a href="./index.html">Integration overview</a> · <a href="./eula.html">End-user license agreement</a><br>
+       © 2026 Livelihood Impact Fund</p>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>DAF Grant Sync — Livelihood Impact Fund</title>
+<style>
+  :root {
+    --ink: #16191d; --muted: #5d6874; --rule: #dfe3e8;
+    --ground: #ffffff; --accent: #0f6257;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e8ecef; --muted: #98a3ae; --rule: #2c343c;
+            --ground: #14181c; --accent: #4cb5a6; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding-inline: 20px; padding-block: 56px 72px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); margin: 0 0 36px; font-size: 17px; }
+  h2 { font-size: 18px; margin: 34px 0 8px; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .box { border: 1px solid var(--rule); padding: 18px 20px; margin: 28px 0; }
+  .box p { margin: 0; }
+  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: 14px; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>DAF Grant Sync</h1>
+  <p class="sub">An internal accounting integration operated by Livelihood Impact Fund.</p>
+
+  <p>DAF Grant Sync records charitable grants made from Livelihood Impact Fund's
+     donor-advised fund accounts into the Fund's QuickBooks Online accounting records.
+     It is built and operated by Livelihood Impact Fund for its own bookkeeping, and is
+     not offered to, sold to, or usable by anyone outside the organization.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Reads grant records — date, amount, recipient charity, and reference number —
+        from the donor-advised fund platforms the Fund grants through.</li>
+    <li>Creates a matching expense transaction in the Fund's QuickBooks Online company.</li>
+    <li>Checks existing QuickBooks records before writing, so a grant is never recorded twice.</li>
+  </ul>
+
+  <h2>What it does not do</h2>
+  <ul>
+    <li>It does not move money or initiate any payment.</li>
+    <li>It does not read or store customer, employee, or payroll data.</li>
+    <li>It does not share data with any third party.</li>
+  </ul>
+
+  <h2>Connecting and disconnecting</h2>
+  <p>The integration is connected to QuickBooks Online once, by an administrator of the
+     Fund's QuickBooks company, through Intuit's standard authorization screen. It runs
+     as a scheduled script thereafter and has no separate sign-in.</p>
+
+  <div class="box">
+    <p><strong>To disconnect:</strong> in QuickBooks Online, go to <strong>Settings →
+       Apps → DAF Grant Sync → Disconnect</strong>. Access ends immediately. No further
+       data is read or written, and the Fund deletes the stored authorization tokens.</p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>Questions about this integration: <a href="mailto:tech@lifund.org">tech@lifund.org</a></p>
+
+  <footer>
+    <p><a href="./privacy.html">Privacy policy</a> · <a href="./eula.html">End-user license agreement</a><br>
+       © 2026 Livelihood Impact Fund</p>
+  </footer>
+
+</div>
+</body>
+</html>
